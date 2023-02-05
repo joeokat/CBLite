@@ -1,16 +1,7 @@
 <template>
     <v-card>        
       <v-container fluid>
-        <v-row>
-          <v-card color="#385F73" dark>
-            <v-card-title class="text-h5">
-              Unlimited music now
-            </v-card-title>
-            <v-card-text>
-            text goes here
-            </v-card-text>
-          </v-card>
-
+        <v-row>          
           <v-col v-for="card in cards"
             :key="card.title"
             :cols="card.flex"

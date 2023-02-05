@@ -2,7 +2,7 @@
   <v-app>
     <!--Navigation bar-->
     <Navbar />
-
+    <BottomNav />
     <v-main>
       
       <router-view/>
@@ -12,11 +12,12 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
-import HomeView from './views/HomeView.vue';
+import HomeView from './views/HomeView.vue'
+import BottomNav from '@/components/BottomNav'
 
 export default {
   name: 'App',
-  components: { Navbar, HomeView },
+  components: { Navbar, HomeView, BottomNav },
 
   data() {
     return {
