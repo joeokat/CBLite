@@ -3,25 +3,25 @@
     <!--Navigation bar-->
     <Navbar />
     <BottomNav />
-    <v-main>
-      
-      <router-view/>
-    </v-main>
+    
+    <!--Main-->
+    <router-view/>
+    
   </v-app>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
 import HomeView from './views/HomeView.vue'
-import BottomNav from '@/components/BottomNav'
+import Navbar from '@/components/Navbar.vue'
+import BottomNav from '@/components/BottomNav.vue'
 
 export default {
   name: 'App',
-  components: { Navbar, HomeView, BottomNav },
+  components: { HomeView, Navbar, BottomNav,  },
 
   data() {
     return {
-
+      heading: 'This is the home page'
     }
   }
 }

@@ -13,7 +13,7 @@
             </v-btn>            
         </v-toolbar>
         <!--Floating Notification-->
-        <v-card flat
+        <!-- <v-card flat
         v-model = bell
         max-width = "400"
         class = "mx-auto"
@@ -31,7 +31,7 @@
             <v-card-text>
                 Make a cash or gift donation to give hope to the less fortunate in our society.
             </v-card-text>             
-        </v-card>
+        </v-card> -->
     </nav>
 </template>
 

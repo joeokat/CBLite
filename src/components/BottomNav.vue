@@ -1,7 +1,10 @@
 <template>
-    <v-bottom-navigation dark grow hide-on-scroll
+    <v-bottom-navigation 
+    flat
+    shift
+    grow
     v-model="value"
-    :background-color="color"
+    :color="color"
   >
     <v-btn>      
       <v-icon>mdi-church</v-icon>
@@ -30,8 +33,8 @@
       computed: {
         color () {
           switch (this.value) {
-            case 0: return 'blue-grey'
-            case 1: return 'teal'
+            case 0: return 'teal'
+            case 1: return 'error'
             case 2: return 'brown'
             default: return 'blue-grey'
           }
