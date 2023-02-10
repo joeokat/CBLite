@@ -5,22 +5,12 @@
     grow
     v-model="value"
     :color="color"
+    class="bg-grey-lighten-5"
   >
-    <v-btn>      
-      <v-icon>mdi-church</v-icon>
-      <span>Home</span>
+    <v-btn v-for="link in links" :key="link.text" router :to="link.route">      
+      <v-icon>{{ link.icon }}</v-icon>
+      <span>{{ link.text }}</span>
     </v-btn>
-
-    <v-btn>
-      <v-icon>mdi-note</v-icon>
-      <span>Notes</span>
-    </v-btn>
-
-    <v-btn>      
-      <v-icon>mdi-book</v-icon>
-      <span>Books</span>
-    </v-btn>
-
   </v-bottom-navigation>
 </template>
 
@@ -28,15 +18,25 @@
 
 <script>
     export default {
-      data: () => ({ value: 0 }),
+      data() {
+        return {
+          value: 0,
+
+          links: [
+            { icon: 'mdi-home', text: 'Home', route: '/' },
+            { icon: 'mdi-cloud', text: 'Suggest', route: '/suggest' },
+            { icon: 'mdi-book', text: 'Books', route: '/books' }
+          ]
+        }
+      },
   
       computed: {
         color () {
           switch (this.value) {
-            case 0: return 'teal'
-            case 1: return 'error'
-            case 2: return 'brown'
-            default: return 'blue-grey'
+            case 0: return 'light-blue-darken-4'
+            case 1: return 'light-green-darken-4'
+            case 2: return 'brown-darken-4'
+            default: return 'light-blue-darken-4'
           }
         },
       },
