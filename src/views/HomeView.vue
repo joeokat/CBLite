@@ -40,19 +40,15 @@ name: 'HomeView',
     return {
       heading: 'Categories',
       cards: [
-        { route: '/almanac', title: 'Almanac', color: '#2CB5B4', icon: require('@/assets/almanac.svg') },
-        { route: '/creed', title: 'Creed', color: '#474BA5', icon: require('@/assets/creed.svg') },
+        { title: 'Almanac', color: '#2CB5B4', icon: require('@/assets/almanac.svg'), route: '/almanac' },
+        { title: 'Creed', color: '#474BA5', icon: require('@/assets/creed.svg'), route: '/creed' },
         { title: 'Live', color: '#FF4C4C', icon: require('@/assets/live.svg') },
         { title: 'Study', color: '#62D788', icon: require('@/assets/study.svg') },
-        { route: '/events', title: 'Events', color: '#044D80', icon: require('@/assets/events.svg') },
-        { route: '/support', title: 'Sponsor', color: '#F5A623', icon: require('@/assets/support.svg') },
+        { title: 'Events', color: '#044D80', icon: require('@/assets/events.svg'), route: '/events' },
+        { title: 'Sponsor', color: '#F5A623', icon: require('@/assets/support.svg'), route: '/support' },
       ],
-    },
-    methods: {
-      goto() {
-        this.cards.route;
-      }
     }
+   
   }
 }
 </script>

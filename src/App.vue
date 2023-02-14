@@ -70,6 +70,6 @@ export default {
     font-size: 24px;
   }
   .company {
-    font-size: 10px;
+    font-size: 14px;
   }
 </style>
