@@ -28,11 +28,15 @@
         density="compact"
         placeholder="Write to us"
         variant="outlined"
+        clearable
       ></v-textarea>
     
       <v-btn flat rounded 
       append-icon="mdi-send"
-      color="blue"> Send </v-btn>
+      variant="tonal"
+      size="large"
+      color="blue"
+      > Send </v-btn>
   </v-card>
 
 </template>

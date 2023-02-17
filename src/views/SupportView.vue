@@ -37,7 +37,10 @@
       rounded 
       append-icon="mdi-gift"
       class="ma-2" 
-      color="blue">
+      color="blue"
+      size="large"
+      variant="tonal"
+      >
         Donate
       </v-btn>
     </v-row>
@@ -65,6 +68,8 @@
       rounded
       class="ma-2" 
       color="blue"
+      size="large"
+      variant="tonal"
       append-icon="mdi-gift"
       >
         Become a sponsor
