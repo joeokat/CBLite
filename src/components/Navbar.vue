@@ -6,7 +6,7 @@
                 <span class="font-weight-light text-blue">Lite</span>
             </v-toolbar-title>
         <!--Notification-->
-        <v-btn rounded>
+        <v-btn icon>
             <v-icon class="text-blue">mdi-bell</v-icon>
             <!-- <span class="font-weight-medium ml-2 text-blue">Notice</span> -->
             <v-menu activator="parent">

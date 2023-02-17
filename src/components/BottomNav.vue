@@ -24,8 +24,8 @@
 
           links: [
             { icon: 'mdi-home', text: 'Home', route: '/' },
-            { icon: 'mdi-cloud', text: 'Suggest', route: '/suggest' },
-            { icon: 'mdi-book', text: 'Books', route: '/books' }
+            { icon: 'mdi-book', text: 'Books', route: '/books' },
+            { icon: 'mdi-cloud', text: 'Suggest', route: '/suggest' }
           ]
         }
       },
@@ -34,8 +34,8 @@
         color () {
           switch (this.value) {
             case 0: return 'light-blue-darken-4'
-            case 1: return 'light-green-darken-4'
-            case 2: return 'brown-darken-4'
+            case 1: return 'brown-darken-4'
+            case 2: return 'light-green-darken-4'
             default: return 'light-blue-darken-4'
           }
         },
