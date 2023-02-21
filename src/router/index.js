@@ -6,6 +6,7 @@ import AlmanacView from '@/views/AlmanacView.vue'
 import CreedView from '@/views/CreedView.vue'
 import EventsView from '@/views/EventsView.vue'
 import SupportView from '@/views/SupportView.vue'
+import LiveView from '@/views/LiveView.vue'
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/support',
     name: 'support',
     component: SupportView
+  },
+  {
+    path: '/live',
+    name: 'live',
+    component: LiveView
   }
 ]
 
