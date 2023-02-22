@@ -7,6 +7,7 @@ import CreedView from '@/views/CreedView.vue'
 import EventsView from '@/views/EventsView.vue'
 import SupportView from '@/views/SupportView.vue'
 import LiveView from '@/views/LiveView.vue'
+import CardDetails from '@/components/Cards/CardDetails.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: '/live',
     name: 'live',
     component: LiveView
+  },
+  {
+    path: '/cards/:id',
+    name: 'CardDetails',
+    component: CardDetails
   }
 ]
 

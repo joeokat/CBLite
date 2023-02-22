@@ -32,10 +32,11 @@
 import HomeView from './views/HomeView.vue'
 import Navbar from '@/components/Navbar.vue'
 import BottomNav from '@/components/BottomNav.vue'
+import Card from './components/Cards/Card.vue'
 
 export default {
   name: 'App',
-  components: { HomeView, Navbar, BottomNav },
+  components: { HomeView, Navbar, BottomNav, Card },
 
   data() {
     return {
