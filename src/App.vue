@@ -22,55 +22,51 @@
       <BottomNav />
       <!--Main-->
       <v-main>
-        <router-view/>
-      </v-main>    
+        <router-view />
+      </v-main>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue'
-import Navbar from '@/components/Navbar.vue'
-import BottomNav from '@/components/BottomNav.vue'
-import Card from './components/Cards/Card.vue'
+import HomeView from "./views/HomeView.vue";
+import Navbar from "@/components/Navbar.vue";
+import BottomNav from "@/components/BottomNav.vue";
+import Card from "./components/Cards/Card.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: { HomeView, Navbar, BottomNav, Card },
 
   data() {
     return {
       showSplashScreen: true,
-    }
+    };
   },
   mounted() {
     setTimeout(() => {
       this.showSplashScreen = false;
     }, 3000);
-  }
-}
+  },
+};
 </script>
 
-
-
 <style>
-  .body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .fill-height {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(91.13deg, 
-    #0067FF 2.03%, #0057FF 95.87%);
-    
-  }
-  .logo {
-    font-size: 24px;
-  }
-  .company {
-    font-size: 14px;
-  }
+.body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.fill-height {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(91.13deg, #0067ff 2.03%, #0057ff 95.87%);
+}
+.logo {
+  font-size: 24px;
+}
+.company {
+  font-size: 14px;
+}
 </style>

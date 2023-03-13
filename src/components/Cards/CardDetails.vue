@@ -1,15 +1,14 @@
 <template>
     <v-container>
       <div class="books">
-        <h1>This is the Card {{ card.id }} Detail View</h1>
+        <h1>This is the Card Detail View</h1>
       </div>
     </v-container>
   </template>
   
 
 
-  <script>
+<script>
 
 
-
-  </script>
+ </script>
