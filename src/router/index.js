@@ -53,7 +53,8 @@ const routes = [
   {
     path: '/cards/:id',
     name: 'CardDetails',
-    component: CardDetails
+    component: CardDetails,
+    props: true
   }
 ]
 

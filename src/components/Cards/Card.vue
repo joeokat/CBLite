@@ -3,7 +3,10 @@
       <v-col cols="6" md="4" lg="3"
       v-for="card in cards" :key="card.id"
       >
-        <router-link :to="{ name: 'CardDetails', params: {id: card.id}}" >
+        <router-link 
+        :to="{ name: 'CardDetails', params: {id: card.id}}" 
+        class="text-decoration-none"
+        >
           <v-card class="pa-6 card-outline"> 
             <v-img 
               :src="card.icon" 
@@ -27,6 +30,7 @@
 <script>
 export default {
   data: () => ({
+    props: "id",
     cards: [
         { id:1, title: 'Almanac', color: '#2CB5B4', icon: require('@/assets/almanac.svg'), route: '/almanac' },
         { id:2, title: 'Creed', color: '#474BA5', icon: require('@/assets/creed.svg'), route: '/creed' },
@@ -45,5 +49,8 @@ export default {
   .card-outline {
     border-radius: 16px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  }
+  .text-decoration-none {
+    text-decoration: none !important;
   }
 </style>
