@@ -1,46 +1,58 @@
 <template>
-  <v-bottom-navigation
-    flat
-    shift
-    grow
-    v-model="value"
-    :color="color"
-    class="bg-grey-lighten-5"
-  >
-    <v-btn v-for="link in links" :key="link.text" router :to="link.route">
-      <v-icon>{{ link.icon }}</v-icon>
-      <span>{{ link.text }}</span>
-    </v-btn>
-  </v-bottom-navigation>
+  <div class="bottom-navigation-wrapper">
+    <v-layout class="overflow-visible" style="height: 56px">
+      <v-bottom-navigation v-model="value" :bg-color="color" mode="shift">
+        <v-btn @click="goTo('home')">
+          <v-icon>mdi-home</v-icon>
+
+          <span>Home</span>
+        </v-btn>
+
+        <v-btn @click="goTo('books')">
+          <v-icon>mdi-book</v-icon>
+
+          <span>Books</span>
+        </v-btn>
+
+        <v-btn @click="goTo('feedbacks')">
+          <v-icon>mdi-comment-quote</v-icon>
+
+          <span>Feedbacks</span>
+        </v-btn>
+      </v-bottom-navigation>
+    </v-layout>
+  </div>
 </template>
 
 <script>
 export default {
-  links: [
-    { icon: "mdi-home", text: "Home", route: "/" },
-    { icon: "mdi-book", text: "Books", route: "/books" },
-    {
-      icon: "mdi-comment-quote",
-      text: "Share Feedback",
-      route: "/suggest",
-    },
-  ],
-
   data: () => ({ value: 0 }),
-
+  methods: {
+    goTo(route) {
+      this.$router.push({ name: route });
+    },
+  },
   computed: {
     color() {
       switch (this.value) {
         case 0:
-          return "light-blue-darken-4";
+          return "teal";
         case 1:
-          return "brown-darken-4";
+          return "brown";
         case 2:
-          return "light-green-darken-4";
-        default:
           return "light-blue-darken-4";
       }
     },
   },
 };
 </script>
+
+<style>
+.bottom-navigation-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+</style>

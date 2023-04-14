@@ -19,11 +19,12 @@
     <v-content v-else>
       <!--Navigation bar-->
       <Navbar />
-      <BottomNav />
       <!--Main-->
       <v-main>
         <router-view />
       </v-main>
+      <!--Tabs-->
+      <BottomNav />
     </v-content>
   </v-app>
 </template>

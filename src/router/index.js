@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import FeedbackView from "@/views/FeedbackView.vue";
+import FeedbacksView from "@/views/FeedbacksView.vue";
 import BooksView from "@/views/BooksView.vue";
 import AlmanacView from "@/views/AlmanacView.vue";
 import CreedView from "@/views/CreedView.vue";
@@ -16,9 +16,9 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/suggest",
-    name: "suggest feedback",
-    component: FeedbackView,
+    path: "/feedbacks",
+    name: "feedbacks",
+    component: FeedbacksView,
   },
   {
     path: "/books",

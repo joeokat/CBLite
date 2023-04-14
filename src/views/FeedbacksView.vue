@@ -4,7 +4,7 @@
       flat
       max-width="448"
       rounded="lg"
-      color="teal text-white"
+      color="light-blue-darken-4"
       class="mx-auto pa-2"
     >
       <v-card-item
@@ -39,14 +39,14 @@
       <v-chip
         class="mx-auto ma-2"
         max-width="448"
-        color="indigo"
+        color="light-blue-darken-4"
         text-color="white"
       >
         Books </v-chip
       ><v-chip
         class="mx-auto ma-2"
         max-width="448"
-        color="indigo"
+        color="light-blue-darken-4"
         text-color="white"
       >
         Forum
@@ -73,7 +73,7 @@
       append-icon="mdi-send"
       variant="tonal"
       size="large"
-      color="blue"
+      color="light-blue-darken-4"
     >
       Submit
     </v-btn>
