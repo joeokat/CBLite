@@ -1,0 +1,388 @@
+const data = [
+  {
+    id: 5,
+    month: "May",
+    week1: [
+      {
+        mon: "Women's Week Begins. God speaks through a shepherd to his people. Amos 1:1",
+        tue: "The Lord roars from Zion. Amos 1:2",
+        wed: "Transgressions and punishment on Damascus. Amos 1:3-5",
+        thu: "I will not revoke the punishment on Gaza. Amos 1:6-8",
+        fri: "Remember the convenant of brotherhood. Amos 1:9-10",
+        sat: "Do not pursue your brother with the sword. Amos 1:11-12",
+        sun: "5th Sunday of Easter. WOMEN'S SUNDAY. WOMEN, LET THE PRESSENCE OF CHRIST IN YOU GIVE YOU HOPE TO GLORIFY GOD ALWAYS. Ruth1:16-18; Colossians 1:27, Luke 7:36-42",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 7,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 8,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 9,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 10,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 11,
+    month: "June",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+  {
+    id: 12,
+    month: "July",
+    week1: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week2: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week3: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+    week4: [
+      {
+        mon: "",
+        tue: "",
+        wed: "",
+        thu: "",
+        fri: "",
+        sat: "",
+        sun: "",
+      },
+    ],
+  },
+];
+
+export default data;
