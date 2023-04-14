@@ -8,7 +8,7 @@
     </v-card>
   </div>
 
-  <v-container class="page--padding">
+  <v-container>
     <Card />
   </v-container>
 </template>
@@ -28,8 +28,5 @@ export default {
 
 <Style scoped>
 
-.page--padding {
-  padding-bottom: 72px;
-}
 
 </Style>
