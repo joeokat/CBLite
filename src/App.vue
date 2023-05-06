@@ -9,8 +9,7 @@
             <span class="font-weight-light">Lite</span>
           </div>
           <div class="company font-weight-light text-white">
-            <p>from</p>
-            <p>Fleet Labs Ghana</p>
+            <p>Handbook</p>
           </div>
         </v-col>
       </v-row>
